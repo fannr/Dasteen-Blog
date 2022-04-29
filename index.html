@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Dasteen Blog</title>
+
+    <meta
+      name="description"
+      content="Dasteen.blog is a blog that explains html, css, react, vue, and also fills a blog content that is useful for readers."
+    />
+    <meta name="keywords" content="HTML5, CSS3, JAVASCRIPT, WEB DEVELOPMENT" />
+    <meta name="author" content="Fatah Noer" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/carbon-copy/100/000000/d.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Dasteen<span>.Blog</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#category">Category</a>
+            <a class="nav-link" href="#article">Article</a>
+            <a class="nav-link" href="#contact">Contact Me</a>
+            <a class="nav-link buyMeCoffee" href="#">
+              <span
+                class="iconify iconCoffee"
+                data-icon="bx:coffee-togo"
+              ></span>
+              Buy Me Coffee</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Jumbotron -->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg col-md-12 mb-4">
+            <h1>
+              Hi, I'm Dasteen <br />
+              Front End Dev
+            </h1>
+
+            <p>
+              On this blog i share tips and trick, framework, project, tutorial,
+              etc Make sure you subscribe to get the latest updates.
+            </p>
+            <form class="d-flex">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter your email..."
+              />
+              <button type="submit" class="buyMeCoffee">Subscribe</button>
+            </form>
+          </div>
+          <div class="col-lg col-md-12 img">
+            <img src="img/banner.svg" alt="My Banner" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <a href="#category" class="scrollBottom">
+        <div></div>
+      </a>
+    </section>
+    <!-- Jumbotron -->
+
+    <!-- Category -->
+    <section class="category" id="category">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h5 class="browse">Browse The Category</h5>
+            <a href="#" class="seeAll">
+              <h5>
+                <span
+                  class="iconify iconArrow"
+                  data-icon="akar-icons:arrow-right"
+                ></span>
+                <span class="textCategory">See All Category</span>
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <div class="col-xl col-lg-4 col-md-4 col-sm-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <span
+                  class="iconify iconCategory"
+                  data-icon="vscode-icons:file-type-html"
+                ></span>
+                <h5 class="card-title">HTML5</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl col-lg-4 col-md-4 col-sm-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <span
+                  class="iconify iconCategory"
+                  data-icon="vscode-icons:file-type-css"
+                ></span>
+                <h5 class="card-title">CSS3</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl col-lg-4 col-md-4 col-sm-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <span
+                  class="iconify iconCategory"
+                  data-icon="vscode-icons:file-type-js-official"
+                ></span>
+                <h5 class="card-title">Javascript</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl col-lg-4 col-md-4 col-sm-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <span
+                  class="iconify iconCategory"
+                  data-icon="logos:tailwindcss-icon"
+                ></span>
+                <h5 class="card-title">Tailwind</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl col-lg-4 col-md-4 col-sm-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <span
+                  class="iconify iconCategory"
+                  data-icon="vscode-icons:file-type-vue"
+                ></span>
+                <h5 class="card-title">Vue JS</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl col-lg-4 col-md-4 col-sm-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <span
+                  class="iconify iconCategory"
+                  data-icon="vscode-icons:file-type-reactjs"
+                ></span>
+                <h5 class="card-title">React JS</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Category -->
+
+    <!-- Article -->
+    <section class="article" id="article">
+      <div class="container">
+        <div class="row titleContent1">
+          <div class="col">
+            <h5 class="browseA">Featured Article</h5>
+            <a href="#" class="seeAllA">
+              <h5>
+                <span
+                  class="iconify iconArrow"
+                  data-icon="akar-icons:arrow-right"
+                ></span>
+                <span class="textCategory">See All Article</span>
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <div class="col-xl col-lg-6 col-md-6 mb-3">
+            <div class="cardArticle">
+              <img src="img/image.jpg" class="img-fluid" alt="Images" />
+              <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
+              <div
+                class="desc d-flex align-items-center justify-content-around"
+              >
+                <img
+                  src="img/lupi.jpg"
+                  class="rounded-circle shadow-sm"
+                  width="50px"
+                  alt="Author"
+                />
+                <div>
+                  <small class="author">Dasteen</small>
+                  <small>Jan 10 2022 ~ 3 Min Read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl col-lg-6 col-md-6 mb-3">
+            <div class="cardArticle">
+              <img src="img/image.jpg" class="img-fluid" alt="Images" />
+              <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
+              <div
+                class="desc d-flex align-items-center justify-content-around"
+              >
+                <img
+                  src="img/lupi.jpg"
+                  class="rounded-circle shadow-sm"
+                  width="50px"
+                  alt="Author"
+                />
+                <div>
+                  <small class="author">Dasteen</small>
+                  <small>Jan 10 2022 ~ 3 Min Read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl col-lg-6 col-md-6 mb-3">
+            <div class="cardArticle">
+              <img src="img/image.jpg" class="img-fluid" alt="Images" />
+              <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
+              <div
+                class="desc d-flex align-items-center justify-content-around"
+              >
+                <img
+                  src="img/lupi.jpg"
+                  class="rounded-circle shadow-sm"
+                  width="50px"
+                  alt="Author"
+                />
+                <div>
+                  <small class="author">Dasteen</small>
+                  <small>Jan 10 2022 ~ 3 Min Read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl col-lg-6 col-md-6 mb-3">
+            <div class="cardArticle">
+              <img src="img/image.jpg" class="img-fluid" alt="Images" />
+              <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
+              <div
+                class="desc d-flex align-items-center justify-content-around"
+              >
+                <img
+                  src="img/lupi.jpg"
+                  class="rounded-circle shadow-sm"
+                  width="50px"
+                  alt="Author"
+                />
+                <div>
+                  <small class="author">Dasteen</small>
+                  <small>Jan 10 2022 ~ 3 Min Read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 titleContent2">
+          <div class="col">
+            <h5 class="browseB">CSS</h5>
+            <a href="#" class="seeAllB">
+              <h5>
+                <span
+                  class="iconify iconArrow"
+                  data-icon="akar-icons:arrow-right"
+                ></span>
+                <span class="textCategory">See All Article</span>
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <div class="col-xl col-lg-6 col-md-6 mb-3">
+            <div class="cardArticle2">
+              <img src="img/image.jpg" class="img-fluid" alt="Images" />
+              <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
+              <div
+                class="desc d-flex align-items-center justify-content-around"
+              >
+                <img
+                  src="img/lupi.jpg"
+                  class="rounded-circle shadow-sm"
+                  width="50px"
+                  alt="Author"
+                />
+                <div>
+                  <small class="author">Dasteen</small>
+                  <small>Jan 10 2022 ~ 3 Min Read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl col-lg-6 col-md-6 mb-3">
+            <div class="cardArticle2">
+              <img src="img/image.jpg" class="img-fluid" alt="Images" />
+              <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
+              <div
+                class="desc d-flex align-items-center justify-content-around"
+              >
+                <img
+                  src="img/lupi.jpg"
+                  class="rounded-circle shadow-sm"
+                  width="50px"
+                  alt="Author"
+                />
+                <div>
+                  <small class="author">Dasteen</small>
+                  <small>Jan 10 2022 ~ 3 Min Read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl col-lg-6 col-md-6 mb-3">
+            <div class="cardArticle2">
+              <img src="img/image.jpg" class="img-fluid" alt="Images" />
+              <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
+              <div
+                class="desc d-flex align-items-center justify-content-around"
+              >
+                <img
+                  src="img/lupi.jpg"
+                  class="rounded-circle shadow-sm"
+                  width="50px"
+                  alt="Author"
+                />
+                <div>
+                  <small class="author">Dasteen</small>
+                  <small>Jan 10 2022 ~ 3 Min Read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl col-lg-6 col-md-6 mb-3">
+            <div class="cardArticle2">
+              <img src="img/image.jpg" class="img-fluid" alt="Images" />
+              <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
+              <div
+                class="desc d-flex align-items-center justify-content-around"
+              >
+                <img
+                  src="img/lupi.jpg"
+                  class="rounded-circle shadow-sm"
+                  width="50px"
+                  alt="Author"
+                />
+                <div>
+                  <small class="author">Dasteen</small>
+                  <small>Jan 10 2022 ~ 3 Min Read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 titleContent3">
+          <div class="col">
+            <h5 class="browseC">JavaScript</h5>
+            <a href="#" class="seeAllC">
+              <h5>
+                <span
+                  class="iconify iconArrow"
+                  data-icon="akar-icons:arrow-right"
+                ></span>
+                <span class="textCategory">See All Article</span>
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <div class="col-xl col-lg-6 col-md-6 mb-3">
+            <div class="cardArticle3">
+              <img src="img/image.jpg" class="img-fluid" alt="Images" />
+              <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
+              <div
+                class="desc d-flex align-items-center justify-content-around"
+              >
+                <img
+                  src="img/lupi.jpg"
+                  class="rounded-circle shadow-sm"
+                  width="50px"
+                  alt="Author"
+                />
+                <div>
+                  <small class="author">Dasteen</small>
+                  <small>Jan 10 2022 ~ 3 Min Read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl col-lg-6 col-md-6 mb-3">
+            <div class="cardArticle3">
+              <img src="img/image.jpg" class="img-fluid" alt="Images" />
+              <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
+              <div
+                class="desc d-flex align-items-center justify-content-around"
+              >
+                <img
+                  src="img/lupi.jpg"
+                  class="rounded-circle shadow-sm"
+                  width="50px"
+                  alt="Author"
+                />
+                <div>
+                  <small class="author">Dasteen</small>
+                  <small>Jan 10 2022 ~ 3 Min Read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl col-lg-6 col-md-6 mb-3">
+            <div class="cardArticle3">
+              <img src="img/image.jpg" class="img-fluid" alt="Images" />
+              <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
+              <div
+                class="desc d-flex align-items-center justify-content-around"
+              >
+                <img
+                  src="img/lupi.jpg"
+                  class="rounded-circle shadow-sm"
+                  width="50px"
+                  alt="Author"
+                />
+                <div>
+                  <small class="author">Dasteen</small>
+                  <small>Jan 10 2022 ~ 3 Min Read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl col-lg-6 col-md-6 mb-3">
+            <div class="cardArticle3">
+              <img src="img/image.jpg" class="img-fluid" alt="Images" />
+              <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
+              <div
+                class="desc d-flex align-items-center justify-content-around"
+              >
+                <img
+                  src="img/lupi.jpg"
+                  class="rounded-circle shadow-sm"
+                  width="50px"
+                  alt="Author"
+                />
+                <div>
+                  <small class="author">Dasteen</small>
+                  <small>Jan 10 2022 ~ 3 Min Read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col justify-content-center">
+          <button class="btn buyMeCoffee">More Article</button>
+        </div>
+      </div>
+    </section>
+    <!-- Article -->
+
+    <!-- ScrollTop -->
+    <a href="#home" class="scrollTop">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+    <!-- ScrollTop -->
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-6 col-lg-7 col-md-9 col-sm-12 text-center">
+            <img
+              src="img/post.svg"
+              alt="Post email"
+              class="mb-5 animateContact img-thumbnail rounded-circle shadow"
+            />
+
+            <h3 class="animateContact">Subscribe For The Lastest Updates</h3>
+            <p class="mb-3 animateContact">
+              Subscribe to newsletter and never miss the new psot every week.
+            </p>
+            <form class="animateContact">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter yuor email..."
+              />
+              <button class="btn buyMeCoffee">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 mb-5">
+            <h3 class="animateContact">Dasteen<span>.Blog</span></h3>
+            <p class="mt-3 animateContact">Digitaldastin by Dastin Darmawan</p>
+            <div>
+              <a href="#" class="linkIcon animateContact">
+                <span
+                  class="iconify"
+                  data-icon="icon-park-outline:twitter"
+                ></span>
+              </a>
+              <a href="#" class="linkIcon animateContact">
+                <span
+                  class="iconify"
+                  data-icon="akar-icons:instagram-fill"
+                ></span>
+              </a>
+              <a href="#" class="linkIcon animateContact">
+                <span class="iconify" data-icon="eva:linkedin-outline"></span>
+              </a>
+              <a href="#" class="linkIcon animateContact"
+                ><span class="iconify" data-icon="fa:facebook-official"></span
+              ></a>
+            </div>
+          </div>
+          <div class="col-xl col-lg col-md col-sm-6 mb-4">
+            <h5 class="animateContact">Category</h5>
+            <div class="mt-3">
+              <a href="#" class="animateContact">CSS</a>
+              <a href="#" class="animateContact">JavaScript</a>
+              <a href="#" class="animateContact">Tailwind</a>
+              <a href="#" class="animateContact">React JS</a>
+              <a href="#" class="animateContact">More Category</a>
+            </div>
+          </div>
+          <div class="col-xl col-lg col-md col-sm-6 mb-4">
+            <h5 class="animateContact">About Me</h5>
+            <div class="mt-3">
+              <a href="#" class="animateContact">About Me</a>
+              <a href="#" class="animateContact">Projects</a>
+              <a href="#" class="animateContact">Achievement</a>
+            </div>
+          </div>
+          <div class="col-xl col-lg col-md col-sm-6 mb-4">
+            <h5 class="animateContact">Get In Touch</h5>
+            <div class="mt-3">
+              <a href="#" class="animateContact">+62-8xx-xxxx-xxx</a>
+              <a href="#" class="animateContact">demo@gmail.com</a>
+            </div>
+          </div>
+          <div class="col-xl col-lg col-md col-sm-6 mb-4">
+            <h5 class="animateContact">Follow Us</h5>
+            <div class="mt-3">
+              <a href="#" class="animateContact">Medium</a>
+              <a href="#" class="animateContact">Instagram</a>
+              <a href="#" class="animateContact">Twitter</a>
+              <a href="#" class="animateContact">Facebook</a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col d-flex justify-content-between">
+            <p class="animateContact">© 2022 Digitaldastin</p>
+            <p class="animateContact">
+              Made With
+              <span
+                class="iconify text-danger"
+                data-icon="ant-design:heart-filled"
+              ></span>
+              Jakarta, Indonesia
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        -->
+    <script src="script.js"></script>
+  </body>
+</html>
