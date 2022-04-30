@@ -36,10 +36,18 @@
     />
   </head>
   <body>
+    <!-- ScrollTop -->
+    <a href="#home" class="scrollTop shadow">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+    <!-- ScrollTop -->
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Dasteen<span>.Blog</span></a>
+        <a class="navbar-brand" id="animateNav" href="#"
+          >Dasteen<span>.Blog</span></a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -48,16 +56,23 @@
           aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          id="animateNav"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            <a class="nav-link" href="#category">Category</a>
-            <a class="nav-link" href="#article">Article</a>
-            <a class="nav-link" href="#contact">Contact Me</a>
-            <a class="nav-link buyMeCoffee" href="#">
+            <a
+              class="nav-link active"
+              id="animateNav"
+              aria-current="page"
+              href="#home"
+              >Home</a
+            >
+            <a class="nav-link" id="animateNav" href="#category">Category</a>
+            <a class="nav-link" id="animateNav" href="#article">Article</a>
+            <a class="nav-link" id="animateNav" href="#contact">Contact Me</a>
+            <a class="nav-link buyMeCoffee" href="#" id="animateNav">
               <span
                 class="iconify iconCoffee"
                 data-icon="bx:coffee-togo"
@@ -71,34 +86,43 @@
     <!-- Navbar -->
 
     <!-- Jumbotron -->
-    <section class="home" id="home">
+    <section
+      class="home d-flex justify-content-center align-items-center"
+      id="home"
+    >
       <div class="container">
-        <div class="row">
-          <div class="col-lg col-md-12 mb-4">
-            <h1>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg col-md-12">
+            <h1 id="animateHome">
               Hi, I'm Dasteen <br />
               Front End Dev
             </h1>
 
-            <p>
+            <p id="animateHome">
               On this blog i share tips and trick, framework, project, tutorial,
               etc Make sure you subscribe to get the latest updates.
             </p>
-            <form class="d-flex">
+            <form class="d-flex" id="animateHome">
               <input
                 type="text"
                 class="form-control"
+                autocomplete="off"
                 placeholder="Enter your email..."
               />
               <button type="submit" class="buyMeCoffee">Subscribe</button>
             </form>
           </div>
-          <div class="col-lg col-md-12 img">
-            <img src="img/banner.svg" alt="My Banner" class="img-fluid" />
+          <div class="col-lg col-md-12">
+            <img
+              src="img/blogging.png"
+              alt="My Banner"
+              width="90%"
+              id="animateHome"
+            />
           </div>
         </div>
       </div>
-      <a href="#category" class="scrollBottom">
+      <a href="#category" class="scrollBottom d-flex" id="animateHome">
         <div></div>
       </a>
     </section>
@@ -108,22 +132,27 @@
     <section class="category" id="category">
       <div class="container">
         <div class="row">
-          <div class="col">
-            <h5 class="browse">Browse The Category</h5>
-            <a href="#" class="seeAll">
+          <div class="col wrapperCategory justify-content-between">
+            <h5 class="browse mb-3" id="animateCategory">
+              Browse The Category
+            </h5>
+            <a href="#" class="seeAll hoverSeeAll">
               <h5>
                 <span
+                  id="animateCategory"
                   class="iconify iconArrow"
                   data-icon="akar-icons:arrow-right"
                 ></span>
-                <span class="textCategory">See All Category</span>
+                <span class="textCategory" id="animateCategory"
+                  >See All Category</span
+                >
               </h5>
             </a>
           </div>
         </div>
         <div class="row mt-5 justify-content-center">
           <div class="col-xl col-lg-4 col-md-4 col-sm-6 mb-3">
-            <div class="card">
+            <div class="card" id="animateCategory">
               <div class="card-body">
                 <span
                   class="iconify iconCategory"
@@ -134,7 +163,7 @@
             </div>
           </div>
           <div class="col-xl col-lg-4 col-md-4 col-sm-6 mb-3">
-            <div class="card">
+            <div class="card" id="animateCategory">
               <div class="card-body">
                 <span
                   class="iconify iconCategory"
@@ -145,7 +174,7 @@
             </div>
           </div>
           <div class="col-xl col-lg-4 col-md-4 col-sm-6 mb-3">
-            <div class="card">
+            <div class="card" id="animateCategory">
               <div class="card-body">
                 <span
                   class="iconify iconCategory"
@@ -156,7 +185,7 @@
             </div>
           </div>
           <div class="col-xl col-lg-4 col-md-4 col-sm-6 mb-3">
-            <div class="card">
+            <div class="card" id="animateCategory">
               <div class="card-body">
                 <span
                   class="iconify iconCategory"
@@ -167,7 +196,7 @@
             </div>
           </div>
           <div class="col-xl col-lg-4 col-md-4 col-sm-6 mb-3">
-            <div class="card">
+            <div class="card" id="animateCategory">
               <div class="card-body">
                 <span
                   class="iconify iconCategory"
@@ -178,7 +207,7 @@
             </div>
           </div>
           <div class="col-xl col-lg-4 col-md-4 col-sm-6 mb-3">
-            <div class="card">
+            <div class="card" id="animateCategory">
               <div class="card-body">
                 <span
                   class="iconify iconCategory"
@@ -197,22 +226,25 @@
     <section class="article" id="article">
       <div class="container">
         <div class="row titleContent1">
-          <div class="col">
-            <h5 class="browseA">Featured Article</h5>
-            <a href="#" class="seeAllA">
+          <div class="col wrapperCategory justify-content-between">
+            <h5 class="browse mb-3" id="animateArticle">Featured Article</h5>
+            <a href="#" class="seeAll hoverSeeAll">
               <h5>
                 <span
+                  id="animateArticle"
                   class="iconify iconArrow"
                   data-icon="akar-icons:arrow-right"
                 ></span>
-                <span class="textCategory">See All Article</span>
+                <span class="textCategory" id="animateArticle"
+                  >See All Article</span
+                >
               </h5>
             </a>
           </div>
         </div>
-        <div class="row mt-5 justify-content-center">
+        <div class="row mt-4 justify-content-center">
           <div class="col-xl col-lg-6 col-md-6 mb-3">
-            <div class="cardArticle">
+            <div class="cardArticle" id="animateArticle">
               <img src="img/image.jpg" class="img-fluid" alt="Images" />
               <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
               <div
@@ -232,7 +264,7 @@
             </div>
           </div>
           <div class="col-xl col-lg-6 col-md-6 mb-3">
-            <div class="cardArticle">
+            <div class="cardArticle" id="animateArticle">
               <img src="img/image.jpg" class="img-fluid" alt="Images" />
               <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
               <div
@@ -252,7 +284,7 @@
             </div>
           </div>
           <div class="col-xl col-lg-6 col-md-6 mb-3">
-            <div class="cardArticle">
+            <div class="cardArticle" id="animateArticle">
               <img src="img/image.jpg" class="img-fluid" alt="Images" />
               <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
               <div
@@ -272,7 +304,7 @@
             </div>
           </div>
           <div class="col-xl col-lg-6 col-md-6 mb-3">
-            <div class="cardArticle">
+            <div class="cardArticle" id="animateArticle">
               <img src="img/image.jpg" class="img-fluid" alt="Images" />
               <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
               <div
@@ -293,22 +325,25 @@
           </div>
         </div>
         <div class="row mt-5 titleContent2">
-          <div class="col">
-            <h5 class="browseB">CSS</h5>
-            <a href="#" class="seeAllB">
+          <div class="col wrapperCategory justify-content-between">
+            <h5 class="browse" id="animateArticle2">CSS</h5>
+            <a href="#" class="seeAll hoverSeeAll">
               <h5>
                 <span
+                  id="animateArticle2"
                   class="iconify iconArrow"
                   data-icon="akar-icons:arrow-right"
                 ></span>
-                <span class="textCategory">See All Article</span>
+                <span class="textCategory" id="animateArticle2"
+                  >See All Article</span
+                >
               </h5>
             </a>
           </div>
         </div>
-        <div class="row mt-5 justify-content-center">
+        <div class="row mt-4 justify-content-center">
           <div class="col-xl col-lg-6 col-md-6 mb-3">
-            <div class="cardArticle2">
+            <div class="cardArticle2" id="animateArticle2">
               <img src="img/image.jpg" class="img-fluid" alt="Images" />
               <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
               <div
@@ -328,7 +363,7 @@
             </div>
           </div>
           <div class="col-xl col-lg-6 col-md-6 mb-3">
-            <div class="cardArticle2">
+            <div class="cardArticle2" id="animateArticle2">
               <img src="img/image.jpg" class="img-fluid" alt="Images" />
               <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
               <div
@@ -348,7 +383,7 @@
             </div>
           </div>
           <div class="col-xl col-lg-6 col-md-6 mb-3">
-            <div class="cardArticle2">
+            <div class="cardArticle2" id="animateArticle2">
               <img src="img/image.jpg" class="img-fluid" alt="Images" />
               <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
               <div
@@ -368,7 +403,7 @@
             </div>
           </div>
           <div class="col-xl col-lg-6 col-md-6 mb-3">
-            <div class="cardArticle2">
+            <div class="cardArticle2" id="animateArticle2">
               <img src="img/image.jpg" class="img-fluid" alt="Images" />
               <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
               <div
@@ -389,22 +424,25 @@
           </div>
         </div>
         <div class="row mt-5 titleContent3">
-          <div class="col">
-            <h5 class="browseC">JavaScript</h5>
-            <a href="#" class="seeAllC">
+          <div class="col wrapperCategory justify-content-between">
+            <h5 class="browse" id="animateArticle3">JavaScript</h5>
+            <a href="#" class="seeAll hoverSeeAll">
               <h5>
                 <span
+                  id="animateArticle3"
                   class="iconify iconArrow"
                   data-icon="akar-icons:arrow-right"
                 ></span>
-                <span class="textCategory">See All Article</span>
+                <span class="textCategory" id="animateArticle3"
+                  >See All Article</span
+                >
               </h5>
             </a>
           </div>
         </div>
-        <div class="row mt-5 justify-content-center">
+        <div class="row mt-4 justify-content-center">
           <div class="col-xl col-lg-6 col-md-6 mb-3">
-            <div class="cardArticle3">
+            <div class="cardArticle3" id="animateArticle3">
               <img src="img/image.jpg" class="img-fluid" alt="Images" />
               <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
               <div
@@ -424,7 +462,7 @@
             </div>
           </div>
           <div class="col-xl col-lg-6 col-md-6 mb-3">
-            <div class="cardArticle3">
+            <div class="cardArticle3" id="animateArticle3">
               <img src="img/image.jpg" class="img-fluid" alt="Images" />
               <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
               <div
@@ -444,7 +482,7 @@
             </div>
           </div>
           <div class="col-xl col-lg-6 col-md-6 mb-3">
-            <div class="cardArticle3">
+            <div class="cardArticle3" id="animateArticle3">
               <img src="img/image.jpg" class="img-fluid" alt="Images" />
               <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
               <div
@@ -464,7 +502,7 @@
             </div>
           </div>
           <div class="col-xl col-lg-6 col-md-6 mb-3">
-            <div class="cardArticle3">
+            <div class="cardArticle3" id="animateArticle3">
               <img src="img/image.jpg" class="img-fluid" alt="Images" />
               <h6 class="text-center mt-3 mb-4">Fundamental Of Javascript</h6>
               <div
@@ -484,20 +522,16 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col justify-content-center">
-          <button class="btn buyMeCoffee">More Article</button>
+        <div class="row mt-5">
+          <div class="col text-center justify-content-center">
+            <a href="#" class="buyMeCoffee btn" id="animateArticle3"
+              >More Article</a
+            >
+          </div>
         </div>
       </div>
     </section>
     <!-- Article -->
-
-    <!-- ScrollTop -->
-    <a href="#home" class="scrollTop">
-      <i class="bi bi-arrow-up-short"></i>
-    </a>
-    <!-- ScrollTop -->
 
     <!-- Contact -->
     <section class="contact" id="contact">
@@ -507,16 +541,18 @@
             <img
               src="img/post.svg"
               alt="Post email"
-              class="mb-5 animateContact img-thumbnail rounded-circle shadow"
+              id="animateContact"
+              class="mb-5 img-thumbnail rounded-circle shadow"
             />
 
-            <h3 class="animateContact">Subscribe For The Lastest Updates</h3>
-            <p class="mb-3 animateContact">
-              Subscribe to newsletter and never miss the new psot every week.
+            <h3 id="animateContact">Subscribe For The Lastest Updates</h3>
+            <p class="mb-3" id="animateContact">
+              Subscribe to newsletter and never miss the new post every week.
             </p>
-            <form class="animateContact">
+            <form id="animateContact">
               <input
                 type="text"
+                autocomplete="off"
                 class="form-control"
                 placeholder="Enter yuor email..."
               />
@@ -532,70 +568,73 @@
     <footer>
       <div class="container mt-5">
         <div class="row">
-          <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 mb-5">
-            <h3 class="animateContact">Dasteen<span>.Blog</span></h3>
-            <p class="mt-3 animateContact">Digitaldastin by Dastin Darmawan</p>
+          <div
+            class="col-xl-4 col-lg-5 col-md-12 col-sm-12 mb-5"
+            id="animateContact"
+          >
+            <h3>Dasteen<span>.Blog</span></h3>
+            <p class="mt-3">Digitaldastin by Dastin Darmawan</p>
             <div>
-              <a href="#" class="linkIcon animateContact">
+              <a href="#" class="linkIcon">
                 <span
                   class="iconify"
                   data-icon="icon-park-outline:twitter"
                 ></span>
               </a>
-              <a href="#" class="linkIcon animateContact">
+              <a href="#" class="linkIcon">
                 <span
                   class="iconify"
                   data-icon="akar-icons:instagram-fill"
                 ></span>
               </a>
-              <a href="#" class="linkIcon animateContact">
+              <a href="#" class="linkIcon">
                 <span class="iconify" data-icon="eva:linkedin-outline"></span>
               </a>
-              <a href="#" class="linkIcon animateContact"
+              <a href="#" class="linkIcon"
                 ><span class="iconify" data-icon="fa:facebook-official"></span
               ></a>
             </div>
           </div>
-          <div class="col-xl col-lg col-md col-sm-6 mb-4">
-            <h5 class="animateContact">Category</h5>
+          <div class="col-xl col-lg col-md col-sm-6 mb-4" id="animateContact">
+            <h5>Category</h5>
             <div class="mt-3">
-              <a href="#" class="animateContact">CSS</a>
-              <a href="#" class="animateContact">JavaScript</a>
-              <a href="#" class="animateContact">Tailwind</a>
-              <a href="#" class="animateContact">React JS</a>
-              <a href="#" class="animateContact">More Category</a>
+              <a href="#">CSS</a>
+              <a href="#">JavaScript</a>
+              <a href="#">Tailwind</a>
+              <a href="#">React JS</a>
+              <a href="#">More Category</a>
             </div>
           </div>
-          <div class="col-xl col-lg col-md col-sm-6 mb-4">
-            <h5 class="animateContact">About Me</h5>
+          <div class="col-xl col-lg col-md col-sm-6 mb-4" id="animateContact">
+            <h5>About Me</h5>
             <div class="mt-3">
-              <a href="#" class="animateContact">About Me</a>
-              <a href="#" class="animateContact">Projects</a>
-              <a href="#" class="animateContact">Achievement</a>
+              <a href="#">About Me</a>
+              <a href="#">Projects</a>
+              <a href="#">Achievement</a>
             </div>
           </div>
-          <div class="col-xl col-lg col-md col-sm-6 mb-4">
-            <h5 class="animateContact">Get In Touch</h5>
+          <div class="col-xl col-lg col-md col-sm-6 mb-4" id="animateContact">
+            <h5>Get In Touch</h5>
             <div class="mt-3">
-              <a href="#" class="animateContact">+62-8xx-xxxx-xxx</a>
-              <a href="#" class="animateContact">demo@gmail.com</a>
+              <a href="#">+62-8xx-xxxx-xxx</a>
+              <a href="#">demo@gmail.com</a>
             </div>
           </div>
-          <div class="col-xl col-lg col-md col-sm-6 mb-4">
-            <h5 class="animateContact">Follow Us</h5>
+          <div class="col-xl col-lg col-md col-sm-6 mb-4" id="animateContact">
+            <h5>Follow Us</h5>
             <div class="mt-3">
-              <a href="#" class="animateContact">Medium</a>
-              <a href="#" class="animateContact">Instagram</a>
-              <a href="#" class="animateContact">Twitter</a>
-              <a href="#" class="animateContact">Facebook</a>
+              <a href="#">Medium</a>
+              <a href="#">Instagram</a>
+              <a href="#">Twitter</a>
+              <a href="#">Facebook</a>
             </div>
           </div>
         </div>
         <hr />
-        <div class="row">
-          <div class="col d-flex justify-content-between">
-            <p class="animateContact">© 2022 Digitaldastin</p>
-            <p class="animateContact">
+        <div class="row" id="animateContact">
+          <div class="col wrapperCategory justify-content-between">
+            <p>© 2022 Digitaldastin</p>
+            <p>
               Made With
               <span
                 class="iconify text-danger"
