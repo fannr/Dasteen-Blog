@@ -127,7 +127,7 @@ window.addEventListener("scroll", function () {
 
   // Animate Contact
   const contact = document.querySelector(".contact");
-  if (scrollPos >= contact.offsetTop - 350) {
+  if (scrollPos >= contact.offsetTop - 450) {
     const elContact = document.querySelectorAll("#animateContact");
     elContact.forEach((el, i) => {
       setTimeout(() => {

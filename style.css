@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bgButton);
+}
+
 :root {
   --bgButton: #8700ca;
   --bgBanner: #eff0f3;
@@ -92,6 +104,7 @@ section {
 .home {
   position: relative;
   height: 100vh;
+  overflow-y: hidden;
 }
 
 @keyframes animateFadeIn {
@@ -132,6 +145,14 @@ section {
   transform: translateY(0);
 }
 
+.imgBanner {
+  position: absolute;
+  width: 110%;
+  z-index: -1;
+  top: -150px;
+  right: 20px;
+}
+
 .home p {
   margin: 22px 15px;
   color: var(--colorText);
@@ -160,8 +181,15 @@ section {
 }
 
 .home img {
-  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
   transform: translateX(50px);
+}
+
+.home svg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 .home img.fadeIn {
@@ -305,27 +333,10 @@ section {
   transform: scale(1);
 }
 
-.card:after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 5px;
-  height: 0%;
-  background: var(--bgButton);
-  transition: 0.5s;
-}
-
 .card-body {
   position: absolute;
   bottom: 0;
   left: 10px;
-}
-
-.card:hover:after {
-  background: white;
-  height: 100%;
 }
 
 .card:hover {
@@ -392,13 +403,13 @@ section {
   border-radius: 8px;
 }
 
-.cardArticle .desc img {
-  border: 1px solid rgba(0, 0, 0, 0.3);
+.cardArticle img {
+  height: 150px;
+  width: 100%;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
 }
 
-.cardArticle,
-.cardArticle2,
-.cardArticle3 {
+.cardArticle {
   padding: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
   border-radius: 8px;
@@ -416,40 +427,29 @@ section {
 .cardArticle2:hover,
 .cardArticle3:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px -5px rgb(0 0 0 / 30%);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.05);
 }
 
-.cardArticle:hover .desc:before,
-.cardArticle2:hover .desc:before,
-.cardArticle3:hover .desc:before {
-  width: 100%;
-  background: rgba(0, 0, 0, 0.3);
+.article small span {
+  display: inline-block;
+  position: relative;
+  bottom: 4px;
+  margin: 0 3px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--colorText);
 }
 
 .desc div small {
   display: block;
   font-weight: 400;
-  font-size: 14px !important;
+  font-size: 14px;
   color: var(--colorText) !important;
 }
 
-.cardArticle .desc::before,
-.cardArticle2 .desc::before,
-.cardArticle3 .desc::before {
-  content: "";
-  width: 50%;
-  height: 1px;
-  border-radius: 4px;
-  left: 0;
-  transition: 0.3s;
-  background-color: black;
-  display: block;
-  position: absolute;
-  bottom: 68px;
-}
-
 .author {
-  font-weight: 500 !important;
+  font-size: 12px !important;
   margin-bottom: 0px;
 }
 
@@ -535,6 +535,10 @@ footer div.mt-3 a {
   margin-bottom: 10px;
 }
 /* Footer */
+
+button#animateNav {
+  margin: 0 !important;
+}
 
 @media (max-width: 991px) {
   /* Banner */
@@ -622,11 +626,15 @@ footer div.mt-3 a {
     opacity: 1;
   }
 
+  nav .container {
+    padding: 0 20px !important;
+  }
+
   section.home .container {
     padding: 0 10px !important;
   }
 
-  .container {
+  section .container {
     padding: 0 30px;
   }
 }
