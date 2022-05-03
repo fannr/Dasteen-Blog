@@ -30,7 +30,8 @@ a {
 }
 
 section {
-  padding-top: 100px;
+  padding-top: 100px !important;
+  padding-bottom: 50px !important;
   overflow-x: hidden;
 }
 
@@ -103,8 +104,12 @@ section {
 /* Banner */
 .home {
   position: relative;
-  height: 100vh;
   overflow-y: hidden;
+  height: 100vh;
+}
+
+.blog {
+  width: 100%;
 }
 
 @keyframes animateFadeIn {
@@ -147,10 +152,10 @@ section {
 
 .imgBanner {
   position: absolute;
-  width: 110%;
+  width: 100%;
   z-index: -1;
-  top: -150px;
-  right: 20px;
+  top: -100px;
+  right: -5px;
 }
 
 .home p {
@@ -541,6 +546,9 @@ button#animateNav {
 }
 
 @media (max-width: 991px) {
+  .home {
+    height: auto;
+  }
   /* Banner */
   .home h1 {
     font-size: 2rem;
@@ -636,5 +644,9 @@ button#animateNav {
 
   section .container {
     padding: 0 30px;
+  }
+
+  .home {
+    height: 100vh;
   }
 }
